@@ -1,0 +1,33 @@
+{
+  "name": "typescript-bot",
+  "version": "1.0.0",
+  "description": "Simple project to get familiar with TS and DI",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-modules dist/index.js",
+    "watch": "tsc -p tsconfig.json -w",
+    "test": "mocha ./tests/**/*test.*",
+    "test-single": "mocha"
+  },
+  "author": "headcloud",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^15.6.1",
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "inversify": "^5.1.1",
+    "nyc": "^15.1.0",
+    "reflect-metadata": "^0.1.13",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.18",
+    "@types/mocha": "^8.2.2",
+    "@types/ws": "^7.4.4",
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0",
+    "ts-mockito": "^2.6.1",
+    "ts-node": "^10.0.0"
+  }
+}
